@@ -59,7 +59,7 @@ Built with Django, Django Channels (for real-time features), and PostgreSQL.
 1. **Clone the repo**
 
    ```bash
-   git clone https://github.com/yourusername/django-online-learning-platform.git
+   git clone https://github.com/Uttam1611/django-online-learning-platform.git
    cd django-online-learning-platform/backend
    ```
 
