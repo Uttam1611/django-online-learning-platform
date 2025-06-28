@@ -181,5 +181,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## 🙏 Acknowledgments
 
 - [Django Documentation](https://docs.djangoproject.com/)
-- [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 - [Channels Documentation](https://channels.readthedocs.io/en/latest/)
