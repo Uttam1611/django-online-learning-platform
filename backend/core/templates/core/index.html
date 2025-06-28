@@ -1,0 +1,22 @@
+{% extends "core/base.html" %} {% block title %}Home{% endblock %} {% block
+content %}
+<h2>WebSocket Echo Test</h2>
+<input id="messageInput" type="text" placeholder="Type a message..." />
+<button onclick="sendMessage()">Send</button>
+<ul id="messages"></ul>
+
+<script>
+  const ws = new WebSocket("ws://" + window.location.host + "/ws/echo/");
+  ws.onmessage = function (event) {
+    const messages = document.getElementById("messages");
+    const msg = document.createElement("li");
+    msg.textContent = JSON.parse(event.data).message;
+    messages.appendChild(msg);
+  };
+  function sendMessage() {
+    const input = document.getElementById("messageInput");
+    ws.send(input.value);
+    input.value = "";
+  }
+</script>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "core/base.html" %}
+{% block title %}Take Quiz: {{ quiz.title }}{% endblock %}
+{% block content %}
+    <h2>{{ quiz.title }}</h2>
+    <form method="post">
+        {% csrf_token %}
+        {% for question in questions %}
+            <div>
+                <p><strong>{{ forloop.counter }}. {{ question.text }}</strong></p>
+                <input type="text" name="question_{{ question.id }}" placeholder="Your answer">
+            </div>
+        {% endfor %}
+        <button type="submit">Submit Quiz</button>
+    </form>
+{% endblock %}

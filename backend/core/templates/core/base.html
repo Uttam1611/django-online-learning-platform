@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Online Learning Platform{% endblock %}</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="{% url 'course_list' %}">Online Learning Platform</a></h1>
+      {% if user.is_authenticated %}
+      <p>
+        Welcome, {{ user.username }} |
+        <a href="{% url 'admin:logout' %}">Logout</a>
+      </p>
+      {% else %}
+      <p><a href="{% url 'admin:login' %}">Login</a></p>
+      {% endif %}
+      <hr />
+    </header>
+    <main>{% block content %}{% endblock %}</main>
+  </body>
+</html>
