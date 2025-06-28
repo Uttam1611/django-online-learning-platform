@@ -5,12 +5,12 @@
   <p align="center">
     A beginner-friendly backend for an educational platform with course management, user progress tracking, and quizzes.
     <br />
-    <a href="https://github.com/yourusername/django-online-learning-platform"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Uttam1611/django-online-learning-platform"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/yourusername/django-online-learning-platform/issues">Report Bug</a>
+    <a href="https://github.com/Uttam1611/django-online-learning-platform/issues">Report Bug</a>
     ·
-    <a href="https://github.com/yourusername/django-online-learning-platform/issues">Request Feature</a>
+    <a href="https://github.com/Uttam1611/django-online-learning-platform/issues">Request Feature</a>
   </p>
 </div>
 
